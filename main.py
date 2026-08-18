@@ -1,4 +1,4 @@
-#999
+# main.py
 
 import logging
 from pyrogram import Client
@@ -17,7 +17,8 @@ app = Client(
     api_id=config.API_ID,
     api_hash=config.API_HASH,
     bot_token=config.BOT_TOKEN,
-    plugins=dict(root="tg_bot") 
+    plugins=dict(root="tg_bot")
+)
 
 if __name__ == "__main__":
     logger.info("🤖 Bot စတင်အလုပ်လုပ်နေပါပြီ...")
